@@ -13,7 +13,7 @@ public void enqueue(T val) {
 
 public T dequeue() {
 	if (outStack.isEmpty()) {
-		while (!inStack.empty()) {
+		while (!inStack.isEmpty()) {
 			outStack.push(inStack.pop());
 		}
 	}
